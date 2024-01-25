@@ -39,9 +39,9 @@ class CustomHeaderBtn extends StatelessWidget {
 
   Color _getHeaderColor({required currentIndex, required int headerIndex}) {
     if (currentIndex == headerIndex) {
-      return AppColors.primaryColor;
+      return AppColors.headerTextColor;
     } else {
-      return AppColors.white;
+      return AppColors.subHeaderTextColor;
     }
   }
 }

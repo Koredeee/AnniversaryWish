@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/utils/app_enums.dart';
 import 'package:portfolio/core/utils/app_extensions.dart';
-
-import 'contact_intro.dart';
-import 'contact_form.dart';
+import 'package:portfolio/presentation/widgets/body/intro/intro_circle_image_box.dart';
+import 'package:portfolio/presentation/widgets/body/intro/intro_text.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -11,24 +10,24 @@ class ContactSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 80),
-      child: context.width > DeviceType.ipad.getMaxWidth()
-          ? const Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      padding: EdgeInsets.symmetric(vertical: context.height * .12),
+      child: context.width < DeviceType.mobile.getMaxWidth()
+          ? const Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Expanded(
-                  child: ContactIntro(),
-                ),
-                SizedBox(width: 32),
-                Expanded(child: ContactForm()),
+                IntroCircleImageBox(),
+                SizedBox(height: 50),
+                IntroText(),
               ],
             )
-          : const Column(
+          : const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                ContactIntro(),
-                SizedBox(height: 32),
-                ContactForm(),
+                IntroText(),
+                IntroCircleImageBox(),
+
               ],
             ),
     );

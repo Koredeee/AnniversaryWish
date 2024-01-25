@@ -25,8 +25,8 @@ class AboutMeSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                IntroCircleImageBox(),
                 IntroText(),
+                IntroCircleImageBox(),
               ],
             ),
     );

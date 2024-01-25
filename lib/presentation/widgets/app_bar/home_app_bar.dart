@@ -17,14 +17,14 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.appBarColor,
+      color: AppColors.scaffoldColor,
       padding: EdgeInsets.symmetric(
         horizontal: _getHorizontalPadding(context),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const DeveloperNameBtn(),
+          // const DeveloperNameBtn(),
           context.width > DeviceType.ipad.getMaxWidth()
               ? const HorizontalHeaders()
               : const CustomMenuBtn()
