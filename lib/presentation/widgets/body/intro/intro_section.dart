@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_assets.dart';
+import 'package:portfolio/presentation/widgets/body/about_me/about_me_image_box.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
 import 'intro_circle_image_box.dart';
@@ -16,7 +18,7 @@ class IntroSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                IntroCircleImageBox(),
+                AboutMeImageBox(img: AppAssets.introImg),
                 SizedBox(height: 50),
                 IntroText(),
               ],
@@ -26,7 +28,7 @@ class IntroSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 IntroText(),
-                IntroCircleImageBox(),
+                AboutMeImageBox(img: AppAssets.introImg),
               ],
             ),
     );

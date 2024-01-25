@@ -4,8 +4,8 @@ import 'package:portfolio/core/utils/app_extensions.dart';
 import 'package:portfolio/data/models/responsive_size.dart';
 
 class AboutMeImage extends StatelessWidget {
-  const AboutMeImage({super.key});
-
+  const AboutMeImage({super.key, required this.img});
+  final String img;
   @override
   Widget build(BuildContext context) {
     final responsiveSize = ResponsiveSize(
@@ -16,7 +16,7 @@ class AboutMeImage extends StatelessWidget {
     );
 
     return Image.asset(
-      AppAssets.adventuresImg,
+      img,
       width: responsiveSize.getSize(),
       height: responsiveSize.getSize(),
     );

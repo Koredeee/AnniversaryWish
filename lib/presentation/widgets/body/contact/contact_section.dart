@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_assets.dart';
 import 'package:portfolio/core/utils/app_enums.dart';
 import 'package:portfolio/core/utils/app_extensions.dart';
-import 'package:portfolio/presentation/widgets/body/intro/intro_circle_image_box.dart';
-import 'package:portfolio/presentation/widgets/body/intro/intro_text.dart';
+import 'package:portfolio/presentation/widgets/body/about_me/about_me_image_box.dart';
+import 'package:portfolio/presentation/widgets/body/about_me/about_me_text.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -16,18 +17,17 @@ class ContactSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                IntroCircleImageBox(),
+                AboutMeImageBox(img: AppAssets.thankYouImg),
                 SizedBox(height: 50),
-                IntroText(),
+                AboutMeText(),
               ],
             )
           : const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                IntroText(),
-                IntroCircleImageBox(),
-
+                AboutMeText(),
+                AboutMeImageBox(img: AppAssets.thankYouImg),
               ],
             ),
     );

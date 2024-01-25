@@ -20,7 +20,7 @@ class AboutMeSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                AboutMeImageBox(),
+                AboutMeImageBox(img: AppAssets.adventuresImg),
                 SizedBox(height: 50),
                 AboutMeText(),
               ],
@@ -30,7 +30,7 @@ class AboutMeSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 AboutMeText(),
-                AboutMeImageBox(),
+                AboutMeImageBox(img: AppAssets.adventuresImg),
               ],
             ),
     );

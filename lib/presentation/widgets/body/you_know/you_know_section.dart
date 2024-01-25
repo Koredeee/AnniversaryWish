@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_assets.dart';
+import 'package:portfolio/presentation/widgets/body/about_me/about_me_image_box.dart';
+import 'package:portfolio/presentation/widgets/body/about_me/about_me_text.dart';
 import 'package:portfolio/presentation/widgets/body/intro/intro_circle_image_box.dart';
 import 'package:portfolio/presentation/widgets/body/intro/intro_text.dart';
 import '../../../../core/utils/app_enums.dart';
@@ -16,17 +19,21 @@ class YouKnowSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                IntroCircleImageBox(),
+                AboutMeImageBox(
+                  img: AppAssets.youKnowImg,
+                ),
                 SizedBox(height: 50),
-                IntroText(),
+                AboutMeText(),
               ],
             )
           : const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                IntroCircleImageBox(),
-                IntroText(),
+                AboutMeImageBox(
+                  img: AppAssets.youKnowImg,
+                ),
+                AboutMeText(),
               ],
             ),
     );
