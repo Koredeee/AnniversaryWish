@@ -21,7 +21,7 @@ class IntroImage extends StatelessWidget {
       top: 0,
       right: 8,
       child: Image.asset(
-        AppAssets.devImg,
+        AppAssets.introImg,
         width: responsiveSize.getSize(),
         height: responsiveSize.getSize(),
       ),
