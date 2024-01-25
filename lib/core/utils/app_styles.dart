@@ -4,12 +4,12 @@ import 'app_colors.dart';
 
 abstract class AppStyles {
   static TextStyle s52 = TextStyle(
-    color: AppColors.white,
+    color: AppColors.headerTextColor,
     fontSize: 52,
     fontWeight: FontWeight.w600,
   );
   static TextStyle s32 = TextStyle(
-    color: AppColors.primaryColor,
+    color: AppColors.headerTextColor,
     fontSize: 32,
     fontWeight: FontWeight.w600,
   );
@@ -19,12 +19,12 @@ abstract class AppStyles {
     fontWeight: FontWeight.w600,
   );
   static TextStyle s24 = TextStyle(
-    color: AppColors.white,
+    color: AppColors.headerTextColor,
     fontSize: 24,
     fontWeight: FontWeight.w600,
   );
   static TextStyle s18 = TextStyle(
-    color: AppColors.white,
+    color: AppColors.subHeaderTextColor,
     fontSize: 18,
     fontWeight: FontWeight.w500,
   );
@@ -40,7 +40,7 @@ abstract class AppStyles {
     fontWeight: FontWeight.w600,
   );
   static TextStyle s14 = TextStyle(
-    color: AppColors.white,
+    color: AppColors.subHeaderTextColor,
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );

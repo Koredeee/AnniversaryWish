@@ -12,11 +12,11 @@ class ProjectImage extends StatelessWidget {
     return Flexible(
       flex: 2,
       fit: FlexFit.tight,
-      child: CachedNetworkImage(
-        imageUrl: imageUrl,
+      child: Image.asset(
+        imageUrl, // Replace with the actual path to your local image
         width: double.infinity,
         fit: BoxFit.cover,
-        errorWidget: (context, url, error) {
+        errorBuilder: (context, error, stackTrace) {
           return Icon(
             Icons.error,
             color: AppColors.darkColor,

@@ -14,35 +14,25 @@ class ProjectItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      margin: EdgeInsets.all(12),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: AppColors.primaryLight,
+        borderRadius: BorderRadius.circular(20),
+        color: AppColors.scaffoldColor,
+        border: Border.all(
+          color: AppColors.headerTextColor, // Set the border color here
+          width: 4, // Set the border width
+        ),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          ProjectImage(imageUrl: project.imageUrl),
-          const SizedBox(height: 16),
-          FittedBox(
-            child: Text(
-              project.name,
-              style: AppStyles.s24.copyWith(color: AppColors.primaryColor),
-            ),
-          ),
-          const SizedBox(height: 8),
-          Expanded(
-            child: AutoSizeText(
-              project.description,
-              style: AppStyles.s18,
-              minFontSize: 12,
-              maxLines: 4,
-            ),
-          ),
-          const SizedBox(height: 8),
-          // if (project.previewLink != null || project.githubRepoLink != null)
-          ProjectActions(project: project)
-        ],
+      child: ClipRRect(
+        // ClipRRect to clip the image to the rounded corners
+        borderRadius: BorderRadius.circular(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ProjectImage(imageUrl: project.imageUrl),
+            // if (project.previewLink != null || project.githubRepoLink != null)
+          ],
+        ),
       ),
     );
   }

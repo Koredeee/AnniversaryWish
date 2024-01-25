@@ -13,28 +13,31 @@ class IntoActions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> actions = [
-      CustomButton(
-        label: AppBarHeaders.aboutMe.getString(),
-        icon: Icons.person,
-        backgroundColor: AppColors.primaryColor,
+      ElevatedButton(
         onPressed: () {
           context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(1));
         },
-        width: 160,
+        style: ElevatedButton.styleFrom(
+          primary: AppColors.scaffoldColor, // Background color
+          onPrimary: AppColors.headerTextColor, // Text color
+          side: BorderSide(color: AppColors.headerTextColor), // Border color
+        ),
+        child: Container(
+          width: 140,
+          height: 45,
+          child: Center(
+            child: Text(
+              "Explore",
+              style: TextStyle(color: AppColors.headerTextColor),
+            ),
+          ),
+        ),
       ),
       context.width < DeviceType.ipad.getMaxWidth()
           ? const SizedBox(height: 6)
           : const SizedBox(width: 32),
-      CustomButton(
-        label: AppBarHeaders.projects.getString(),
-        icon: Icons.remove_red_eye,
-        borderColor: AppColors.primaryColor,
-        onPressed: () {
-          context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(2));
-        },
-        width: 160,
-      ),
     ];
+
     return context.width < DeviceType.ipad.getMaxWidth()
         ? Column(
             crossAxisAlignment: CrossAxisAlignment.start,

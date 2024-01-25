@@ -24,11 +24,13 @@ abstract class AppConstants {
           'I can collect content and data from the internet then manipulate and analyze as needed.',
     ),
   ];
+
+  static const _basePath = 'assets/images';
+
   static const List<Project> projects = [
     Project(
       name: 'Live score',
-      imageUrl:
-          'https://drive.google.com/uc?id=1ITN6reINiIaM-6j3QqxrwtvADZgLNvwB',
+      imageUrl: '$_basePath/gallery_1.jpg',
       description:
           'A football application to display all related matches and rankings in all international and local tournaments',
       githubRepoLink: 'https://github.com/radyhaggag/live_score',
@@ -36,8 +38,7 @@ abstract class AppConstants {
     ),
     Project(
       name: 'Instagram clone',
-      imageUrl:
-          'https://drive.google.com/uc?id=1qNFCNYdUo7o36ythQtjaSrv7L0NV_Vnv',
+      imageUrl: '$_basePath/gallery_2.jpg',
       description:
           'Social media application for share posts and stories with people, One-to-one chat, Share reels videos',
       githubRepoLink:
@@ -46,8 +47,7 @@ abstract class AppConstants {
     ),
     Project(
       name: 'TikTok Downloader',
-      imageUrl:
-          'https://drive.google.com/uc?id=1SypuIPVdokg0O4DYoYdswRowlIJAGgIq',
+      imageUrl: '$_basePath/gallery_3.jpg',
       description:
           'An application for download videos from tiktok and save it to gallery.',
       githubRepoLink: 'https://github.com/radyhaggag/tiktok_downloader',
@@ -55,8 +55,7 @@ abstract class AppConstants {
     ),
     Project(
       name: 'Bookly',
-      imageUrl:
-          'https://drive.google.com/uc?id=1yQtoq-wjVejWPXRI7gzGMXPUZrRob8kY',
+      imageUrl: '$_basePath/gallery_4.jpg',
       description: 'An application to explore books and view their details.',
       githubRepoLink:
           'https://github.com/radyhaggag/bookly_app_with_mvvm_and_bloc',
@@ -64,8 +63,7 @@ abstract class AppConstants {
     ),
     Project(
       name: 'Image processing',
-      imageUrl:
-          'https://drive.google.com/uc?id=1hd7U3HgoDqXEi9eDKYjrY9iqlWa6qt8E',
+      imageUrl: '$_basePath/gallery_5.jpg',
       description:
           'An Desktop program for process images and apply some filters to them.',
       githubRepoLink:
@@ -74,31 +72,12 @@ abstract class AppConstants {
     ),
     Project(
       name: 'Salat al janazah',
-      imageUrl:
-          'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
+      imageUrl: '$_basePath/gallery_6.jpg',
       description:
           'An application for add janazah prayer and view the prayers for nearby people',
       googlePlay:
           'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
       previewLink: 'https://youtu.be/wK9Y9BhP190',
-    ),
-    Project(
-      name: 'Ghaslah',
-      imageUrl:
-          'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
-      description:
-          'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
-      previewLink: 'https://youtu.be/gkeRSAfCZaI',
-    ),
-    Project(
-      name: 'Zawilan',
-      imageUrl:
-          'https://drive.google.com/uc?id=1ElTwguynMLqhS295-IE7bTTabsZGZp8s',
-      description:
-          'Zwailan is an education app based on units and sections system, you start by sign up on app and wait until the teacher accept your join request.',
-      previewLink: 'https://youtu.be/g92W-SmfkKc',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.radyhaggag.zawilan',
     ),
   ];
 }
