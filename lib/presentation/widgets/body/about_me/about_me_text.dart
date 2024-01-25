@@ -5,7 +5,10 @@ import 'package:portfolio/core/utils/app_strings.dart';
 import 'package:portfolio/core/utils/app_styles.dart';
 
 class AboutMeText extends StatelessWidget {
-  const AboutMeText({super.key});
+  const AboutMeText(
+      {super.key, required this.headerText, required this.subHeaderText});
+  final String headerText;
+  final String subHeaderText;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +18,7 @@ class AboutMeText extends StatelessWidget {
           : CrossAxisAlignment.start,
       children: [
         Text(
-          AppStrings.developerName,
+          headerText,
           style: context.width < DeviceType.ipad.getMaxWidth()
               ? AppStyles.s24
               : AppStyles.s52,
@@ -28,7 +31,7 @@ class AboutMeText extends StatelessWidget {
               ? context.width - 20
               : context.width / 2.5,
           child: Text(
-            AppStrings.introMsg,
+            subHeaderText,
             style: context.width < DeviceType.ipad.getMaxWidth()
                 ? AppStyles.s14
                 : AppStyles.s18,

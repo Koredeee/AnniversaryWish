@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/utils/app_assets.dart';
+import 'package:portfolio/core/utils/app_strings.dart';
 import 'package:portfolio/presentation/widgets/body/about_me/about_me_image_box.dart';
 import 'package:portfolio/presentation/widgets/body/about_me/about_me_text.dart';
 import 'package:portfolio/presentation/widgets/body/intro/intro_circle_image_box.dart';
@@ -23,7 +24,9 @@ class YouKnowSection extends StatelessWidget {
                   img: AppAssets.youKnowImg,
                 ),
                 SizedBox(height: 50),
-                AboutMeText(),
+                AboutMeText(
+                    headerText: AppStrings.headerTextYouKnow,
+                    subHeaderText: AppStrings.subHeaderTextYouKnow),
               ],
             )
           : const Row(
@@ -33,7 +36,9 @@ class YouKnowSection extends StatelessWidget {
                 AboutMeImageBox(
                   img: AppAssets.youKnowImg,
                 ),
-                AboutMeText(),
+                AboutMeText(
+                    headerText: AppStrings.headerTextYouKnow,
+                    subHeaderText: AppStrings.subHeaderTextYouKnow),
               ],
             ),
     );

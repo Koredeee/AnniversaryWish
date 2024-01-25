@@ -12,7 +12,7 @@ extension AppBarHeaderExtension on AppBarHeaders {
       case AppBarHeaders.projects:
         return 'Our Memories';
       case AppBarHeaders.contact:
-        return 'Contact';
+        return 'Yeay';
     }
   }
 }

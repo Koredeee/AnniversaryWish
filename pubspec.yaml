@@ -12,7 +12,7 @@ environment:
 dependencies:
   auto_size_text: ^3.0.0
   cached_network_image: ^3.2.3
-  cupertino_icons: ^1.0.2
+  
   equatable: ^2.0.5
   flutter:
     sdk: flutter
@@ -27,16 +27,16 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_launcher_icons: "^0.12.0"
+  
 
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/portfolio_icon.png"
+  image_path: "assets/images/heart.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   web:
     generate: true
-    image_path: "assets/images/portfolio_icon.png"
+    image_path: "assets/images/heart.png"
 
 
 flutter:

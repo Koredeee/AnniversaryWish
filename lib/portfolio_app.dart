@@ -13,7 +13,7 @@ class PortfolioApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.darkTheme(),
-      title: 'Coy',
+      title: '25th (づ˶•༝•˶)づ♡',
       home: BlocProvider<HomeBloc>(
         create: (context) => HomeBloc(),
         child: const HomeView(),
