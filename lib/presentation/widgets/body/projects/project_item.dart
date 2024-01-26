@@ -1,10 +1,8 @@
-import 'package:auto_size_text/auto_size_text.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/app_colors.dart';
-import '../../../../core/utils/app_styles.dart';
 import '../../../../data/models/project.dart';
-import 'project_actions.dart';
 import 'project_image.dart';
 
 class ProjectItem extends StatelessWidget {
@@ -14,7 +12,7 @@ class ProjectItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(12),
+      margin: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: AppColors.scaffoldColor,

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_assets.dart';
 import 'package:portfolio/core/utils/app_extensions.dart';
 import 'package:portfolio/data/models/responsive_size.dart';
 import 'package:portfolio/presentation/widgets/body/about_me/about_me_image.dart';
-import 'package:portfolio/presentation/widgets/body/intro/circle_image_border.dart';
 
 class AboutMeImageBox extends StatelessWidget {
   const AboutMeImageBox({super.key, required this.img});

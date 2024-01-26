@@ -4,9 +4,6 @@ import 'package:portfolio/core/utils/app_enums.dart';
 import 'package:portfolio/core/utils/app_strings.dart';
 import 'package:portfolio/presentation/widgets/body/about_me/about_me_image_box.dart';
 import 'package:portfolio/presentation/widgets/body/about_me/about_me_text.dart';
-import 'package:portfolio/presentation/widgets/body/intro/intro_circle_image_box.dart';
-import 'package:portfolio/presentation/widgets/body/intro/intro_text.dart';
-import 'package:portfolio/presentation/widgets/body/projects/project_image.dart';
 import '../../../../core/utils/app_extensions.dart';
 
 class AboutMeSection extends StatelessWidget {

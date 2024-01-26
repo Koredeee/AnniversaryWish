@@ -5,7 +5,6 @@ import '../../../core/utils/app_constants.dart';
 import '../../../core/utils/app_enums.dart';
 import '../../../core/utils/app_extensions.dart';
 import 'custom_menu_btn.dart';
-import 'developer_name_btn.dart';
 import 'horizontal_headers.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {

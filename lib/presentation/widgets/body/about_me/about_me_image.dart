@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_assets.dart';
 import 'package:portfolio/core/utils/app_extensions.dart';
 import 'package:portfolio/data/models/responsive_size.dart';
 
