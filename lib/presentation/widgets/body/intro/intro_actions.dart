@@ -17,11 +17,11 @@ class IntoActions extends StatelessWidget {
           context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(1));
         },
         style: ElevatedButton.styleFrom(
-          primary: AppColors.scaffoldColor, // Background color
-          onPrimary: AppColors.headerTextColor, // Text color
+          backgroundColor: AppColors.scaffoldColor, // Background color
+          foregroundColor: AppColors.headerTextColor, // Text color
           side: BorderSide(color: AppColors.headerTextColor), // Border color
         ),
-        child: Container(
+        child: SizedBox(
           width: 140,
           height: 45,
           child: Center(
