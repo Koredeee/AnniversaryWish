@@ -63,7 +63,7 @@ abstract class AppConstants {
     ),
     Project(
       name: 'Image processing',
-      imageUrl: '$_basePath/gallery_5.jpg',
+      imageUrl: '$_basePath/gallery_5.JPG',
       description:
           'An Desktop program for process images and apply some filters to them.',
       githubRepoLink:
@@ -71,13 +71,11 @@ abstract class AppConstants {
       previewLink: 'https://youtu.be/s1KFdBKNFig',
     ),
     Project(
-      name: 'Salat al janazah',
-      imageUrl: '$_basePath/gallery_6.jpg',
-      description:
-          'An application for add janazah prayer and view the prayers for nearby people',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
-      previewLink: 'https://youtu.be/wK9Y9BhP190',
+      name: 'test',
+      imageUrl: '$_basePath/gallery_6.JPG',
+      description: '',
+      googlePlay: '',
+      previewLink: '',
     ),
   ];
 }
